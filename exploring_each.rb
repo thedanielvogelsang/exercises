@@ -1,4 +1,7 @@
-require 'pry'
+array = %w{dog cat go capybara}
 
-favorite_things = ["Trapper Keeper", "Netscape Navigator", "Troll Doll"]
-binding.pry
+y = array.map {|word|
+  word.capitalize
+}
+
+print y.join(', ')
